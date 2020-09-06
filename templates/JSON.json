@@ -1,0 +1,10 @@
+[
+	{
+		"_author": "${AUTHOR}",
+		"_studentnumber": "${STUDENTNR}",
+		"_date": "${DATE}",
+		"_file": "${FILE}",
+		"_version": "1.0",
+		"_description": ""
+	}
+]
