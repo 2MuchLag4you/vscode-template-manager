@@ -18,10 +18,10 @@ This extension is an altered version of the vscode-file-templates from Venkatesh
 
 <br/>
 
-Choose commands from Command Palette:
+Choose commands from Command Palette:</br>
 ![Command Palette](https://github.com/2MuchLag4you/vscode-template-manager/raw/master/images/Command-Pallete.png)
 
-Create a new File from Template:
+Create a new File from Template:</br>
 ![New File](https://github.com/2MuchLag4you/vscode-template-manager/raw/master/images/Create-New-File.png)
 <br/>
 

@@ -4,6 +4,7 @@
 	"description": "This extension helps with creating an managing custom file templates",
 	"version": "1.0.0",
 	"publisher": "Stefanovb",
+	"icon": "images/icon.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/2MuchLag4you/vscode-template-manager.git"
