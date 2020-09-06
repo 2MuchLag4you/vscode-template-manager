@@ -96,3 +96,6 @@ This extension contributes the following settings:
 
 ### 1.0.0
 Initial release of the extension for VSCode
+
+### 1.0.1
+Initial directory fix

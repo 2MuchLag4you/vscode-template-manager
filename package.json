@@ -2,7 +2,7 @@
 	"name": "vscode-template-manager",
 	"displayName": "VSCode File templates",
 	"description": "This extension helps with creating an managing custom file templates",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"publisher": "Stefanovb",
 	"icon": "images/icon.png",
 	"repository": {
@@ -47,7 +47,7 @@
 					},
 					"templates.TemplateDirectory": {
 						"type": "string",
-						"default": "%USERPROFILE%\\.vscode\\extensions\\Stefanovb.vscode-template-manager-1.0.0\\templates",
+						"default": "%USERPROFILE%\\.vscode\\extensions\\Stefanovb.vscode-template-manager-1.0.1\\templates",
 						"description": "Template directory location"
 					}
 				}
