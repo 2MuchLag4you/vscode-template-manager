@@ -53,9 +53,9 @@ Create a new File from Template:
 ## Templates Location
 
 * Depending on your OS, default templates are located at 
-    * Windows : `%USERPROFILE%\.vscode\extensions\vscode-template-manager\templates`
-    * Mac : `~/.vscode/extensions/vscode-template-manager/templates`
-    * Linux : `~/.vscode/extensions/vscode-template-manager/templates`
+    * Windows : `%USERPROFILE%\.vscode\extensions\stefanovb.vscode-template-manager-{version}\templates`
+    * Mac : `~/.vscode/extensions/stefanovb.vscode-template-manager-{version}/templates`
+    * Linux : `~/.vscode/extensions/stefanovb.vscode-template-manager-{version}/templates`
 
 * You can also create workspace specific templates. 
     Worspace templates are located at  `/%WORKSPACE_ROOT_FOLDER%/.vscode/templates`

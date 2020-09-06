@@ -46,7 +46,7 @@
 					},
 					"templates.TemplateDirectory": {
 						"type": "string",
-						"default": "%USERPROFILE%\\.vscode\\extensions\\Stefanovb.vscode-template-manager\\templates",
+						"default": "%USERPROFILE%\\.vscode\\extensions\\Stefanovb.vscode-template-manager-1.0.0\\templates",
 						"description": "Template directory location"
 					}
 				}
