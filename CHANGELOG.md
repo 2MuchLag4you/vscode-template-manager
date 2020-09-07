@@ -43,7 +43,7 @@
 * Add `${FILENAME}` as template variable. ( Filename without extension )
 * Add the command option `Files: Remove a File Template`
 
-## [1.1.3] - 2020-09-07
+## [1.1.4] - 2020-09-07
 * Fix markdown files
 * Fix template directory
 * Fix launch issue

@@ -1,7 +1,6 @@
 const TM = require("../templatemanager");
 const vscode = require("vscode");
 const fs = require("fs");
-const { createPartiallyEmittedExpression } = require("typescript");
 
 function removeTemplate() {
 	TM.getTemplates().then((templatesInfo) => {
