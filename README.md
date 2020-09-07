@@ -102,7 +102,7 @@ This extension contributes the following settings:
 ### 1.0.1
 - Initial directory fix
 
-## 1.0.2 
+### 1.1.0
 - Fix the lowercase template file names.
 - Add `${FILENAME}` as template variable. ( Filename without extension )
 - Add the command option `Files: Remove a File Template`
