@@ -40,8 +40,8 @@ function createFile(filepath, data = "", extension = "") {
 			let newFilePath = path.join(curDir, filenameWithExt);
 			let config = vscode.workspace.getConfiguration("templates");
 			data = data.replace(AUTHOR_TOKEN, config.Author);
-            data = data.replace(STUDENT_TOKEN, config.Student);
-            // Build the date string for the templates
+			data = data.replace(STUDENT_TOKEN, config.Student);
+			// Build the date string for the templates
 			var currentDate =
 				String(new Date().getDate()) +
 				"/" +
@@ -134,9 +134,22 @@ function createNewFile(info) {
 
 			// Read given template file
 			try {
-                // Try to index the templatesInfo with the first letter as uppercase
+				// Try to index the templatesInfo with the first letter as uppercase
+				fs.readFile(templatesInfo[option.label], "utf8", (err, data) => {
+					if (err) {
+						vscode.window.showErrorMessage("Cannot find the template");
+						return;
+					}
+					createFile(currentPath, data, option.extension);
+				});
+			} catch (err) {
+				console.info(err.message);
+			} finally {
+				// Try to index the templatesInfo with the first letter as lowercase
 				fs.readFile(
-					templatesInfo[option.label],
+					templatesInfo[
+						option.label.charAt(0).toLowerCase() + option.label.slice(1)
+					],
 					"utf8",
 					(err, data) => {
 						if (err) {
@@ -146,22 +159,7 @@ function createNewFile(info) {
 						createFile(currentPath, data, option.extension);
 					}
 				);
-			} catch (err){
-                console.info(err.message);
-            } finally {
-                // Try to index the templatesInfo with the first letter as lowercase
-                fs.readFile(
-					templatesInfo[option.label.charAt(0).toLowerCase() + option.label.slice(1)],
-					"utf8",
-					(err, data) => {
-						if (err) {
-							vscode.window.showErrorMessage("Cannot find the template");
-							return;
-						}
-						createFile(currentPath, data, option.extension);
-					}
-				);
-            }
+			}
 		});
 	});
 }

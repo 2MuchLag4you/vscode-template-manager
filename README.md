@@ -107,6 +107,7 @@ This extension contributes the following settings:
 - Add `${FILENAME}` as template variable. ( Filename without extension )
 - Add the command option `Files: Remove a File Template`
 
-### 1.1.2
+### 1.1.3
 - Update the readme and changelog file.
 - Update template folder path.
+- Fix Launch issue
