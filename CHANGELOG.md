@@ -3,10 +3,10 @@
 ## [1.0.0] - 2020-09-06
 
 * Template variables
-    * `${Author}` Add the author name to the file. ( Configureable through extension settings )
+    * `${ÀUTHOR}` Add the author name to the file. ( Configureable through extension settings )
     * `${StudentNR}` Add a Student identifier to the file. ( Configurable through extension settings )
     * `${DATE}` Add the current date to the file.
-    * `${FILE}` Add the filename to the file.
+    * `${FILE}` Add the filename wit extension to the file.
     * `${PRODUCT_NAME}` Add the name of the IDE ( Visual Studio Code ) to the file.
 * Extension Settings
     * `templates.Author` Set the Author name.
@@ -37,3 +37,8 @@
 ## [1.0.1] - 2020-09-06
 * Predefined template directory fix.
     * Directory did not include current version number.
+
+## [1.1.0] - 2020-09-07
+* Support lower case file names. 
+* Add `${FILENAME}` as template variable. ( Filename without extension )
+* Add the command option `Files: Remove a File Template`

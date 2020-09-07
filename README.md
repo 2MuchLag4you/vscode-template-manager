@@ -39,6 +39,7 @@ Create a new File from Template:</br>
     'Files: New File Template'        -   to create a new blank file template.
     'Files: New Template from file'   -   to create a new template from the current active file.
     'Files: Edit File Template'       -   to edit any existing template.
+    'Files: Remove a File Template'   -   to remove a file template.
 
 ## Template Variables
 * Configurable:
@@ -46,7 +47,8 @@ Create a new File from Template:</br>
   * `${StudentNR}` Add a Student identifier to the file.
 * Dynamic:
   * `${DATE}` Add the current date to the file.
-  * `${FILE}` Add the filename to the file.
+  * `${FILE}` Add the filename ( including extension ) to the file.
+  * `${FILENAME}` Add the filename ( excluding extension ) to the file.
 * Static:
   * `${PRODUCT_NAME}` Add the name of the IDE (Visual Studio Code) to the file.
 
@@ -95,7 +97,12 @@ This extension contributes the following settings:
 ## Release Notes
 
 ### 1.0.0
-Initial release of the extension for VSCode
+- Initial release of the extension for VSCode
 
 ### 1.0.1
-Initial directory fix
+- Initial directory fix
+
+## 1.0.2 
+- Fix the lowercase template file names.
+- Add `${FILENAME}` as template variable. ( Filename without extension )
+- Add the command option `Files: Remove a File Template`

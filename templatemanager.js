@@ -1,6 +1,9 @@
+// Default Script variables
 const vscode = require("vscode");
 const fs = require("fs");
 const path = require("path");
+
+// Folder Path environment variables
 const PROFILE_ENV = "%USERPROFILE%";
 const USERNAME_ENV = "%USERNAME%";
 const ONEDRIVE_ENV = "%ONEDRIVE%";
@@ -8,7 +11,8 @@ const ONEDRIVECONSUMER_ENV = "%ONEDRIVECONSUMER%";
 const COMPUTERNAME_ENV = "%COMPUTERNAME%";
 const HOMEPATH_ENV = "%HOMEPATH%";
 
-if (process.platform === "win32") {
+// Filter Operating System
+if (process.platform === "win32") {  // Windows
 	let config = vscode.workspace.getConfiguration("templates");
 	var templatesDir = config.TemplateDirectory;
 	templatesDir = templatesDir.replace(PROFILE_ENV, process.env.USERPROFILE);
@@ -23,18 +27,19 @@ if (process.platform === "win32") {
 		process.env.COMPUTERNAME
 	);
 	templatesDir = templatesDir.replace(HOMEPATH_ENV, process.env.HOMEPATH);
-} else {
+} else {  // MacOS or Linux
 	templatesDir = templatesDir.replace(PROFILE_ENV, process.env.HOME);
 	templatesDir = templatesDir.replace(USERNAME_ENV, process.env.USER);
 	templatesDir = templatesDir.replace(USERNAME_ENV, process.env.HOME);
 	var templatesDir = path.join(__dirname, "templates");
 }
 
-// vscode.window.showInformationMessage(templatesDir);
+// Check if there is a templates dir in the current directory
 const workspaceTemplatesDir = vscode.workspace.rootPath
 	? path.join(vscode.workspace.rootPath, ".vscode", "templates")
 	: "";
 
+// Create the templates directory if it doesn't exist
 function createTemplatesDirIfNotExists() {
 	return new Promise((resolve, reject) => {
 		fs.stat(templatesDir, (err, stats) => {
