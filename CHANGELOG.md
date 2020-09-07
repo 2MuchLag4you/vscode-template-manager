@@ -3,7 +3,7 @@
 ## [1.0.0] - 2020-09-06
 
 * Template variables
-    * `${ÀUTHOR}` Add the author name to the file. ( Configureable through extension settings )
+    * `${AUTHOR}` Add the author name to the file. ( Configureable through extension settings )
     * `${StudentNR}` Add a Student identifier to the file. ( Configurable through extension settings )
     * `${DATE}` Add the current date to the file.
     * `${FILE}` Add the filename wit extension to the file.
@@ -42,3 +42,7 @@
 * Support lower case file names. 
 * Add `${FILENAME}` as template variable. ( Filename without extension )
 * Add the command option `Files: Remove a File Template`
+
+## [1.1.2] - 2020-09-07
+* Fix markdown files
+* Fix template directory

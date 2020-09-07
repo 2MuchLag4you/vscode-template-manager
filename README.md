@@ -106,3 +106,7 @@ This extension contributes the following settings:
 - Fix the lowercase template file names.
 - Add `${FILENAME}` as template variable. ( Filename without extension )
 - Add the command option `Files: Remove a File Template`
+
+### 1.1.2
+- Update the readme and changelog file.
+- Update template folder path.

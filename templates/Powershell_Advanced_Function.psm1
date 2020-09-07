@@ -20,7 +20,7 @@ Function Verb-Noun {
       .NOTES
         Created by ${AUTHOR}
         Create date ${DATE}
-        File Name ${FILE}
+        File Name ${FILENAME}
         Verion 1.0.0
     #>
     param(
